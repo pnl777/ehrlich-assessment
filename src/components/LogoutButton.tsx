@@ -6,8 +6,12 @@ const LogoutButton = () => {
 
   if (isLoading) return <Spinner variant="small-spinner" />;
 
+  const logoutHandler = async () => {
+    await logout();
+  };
+
   return isAuthenticated ? (
-    <button className="logout-btn-blk" onClick={() => logout()}>
+    <button className="logout-btn-blk" onClick={logoutHandler}>
       LOGOUT
     </button>
   ) : null;

@@ -1,5 +1,7 @@
 $mainColor: #561cbe;
-$mainPadding: 15px 40px;
+$mainPadding: 20px 40px;
+$interFont: "Inter", sans-serif;
+$openSansFont: "Open Sans", sans-serif;
 
 * {
   padding: 0;
@@ -19,29 +21,91 @@ button {
     margin-left: auto;
   }
 
+  .brand-blk {
+    font-family: $interFont;
+    color: #fff;
+    .fa-sun {
+      color: yellow;
+      margin-right: 5px;
+    }
+  }
   .logout-btn-blk {
-    background: #3b2cb1;
-    border: none;
+    background: $mainColor;
+    font-family: $openSansFont;
+    border: 1px solid #655aab;
+    color: #fff;
     font-size: 10px;
-    padding: 10px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 3px;
+  }
+}
+
+.main-container-blk {
+  padding: $mainPadding;
+}
+
+.dashboard {
+  display: flex;
+  gap: 40px;
+  label {
+    margin-top: 5px;
+    font-size: 11px;
+    font-family: $openSansFont;
+    display: block;
+    b {
+      color: $mainColor;
+      margin-right: 5px;
+    }
+  }
+  div:first-child {
+    flex: 1;
+  }
+  div:last-child {
+    flex: 3;
+  }
+  img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+// Login Container Styles
+.login-container-blk {
+  width: 998px;
+  margin: 40px auto;
+  h1 {
+    font-family: $openSansFont;
+    font-size: 20px;
   }
 }
 
 //Spinner Styles
 .spinner-blk {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #9714ef;
-  border-top: 3px solid #4c0075;
   border-radius: 50%;
   animation: spinAnimation 1s linear infinite;
+}
+
+.small-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid $mainColor;
+  border-top: 3px solid rgb(122, 66, 253);
 }
 
 .large-spinner {
   width: 100px;
   height: 100px;
-  border: 15px solid #9714ef;
-  border-top: 15px solid #4c0075;
+  border: 15px solid $mainColor;
+  border-top: 15px solid rgb(122, 66, 253);
+}
+
+.medium-spinner {
+  width: 70px;
+  height: 70px;
+  border: 10px solid $mainColor;
+  border-top: 10px solid rgb(122, 66, 253);
 }
 
 .center-spinner {

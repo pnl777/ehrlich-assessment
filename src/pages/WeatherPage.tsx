@@ -1,7 +1,5 @@
-import React from "react";
-
 const WeatherPage = () => {
-  return <div>WeatherPage</div>;
+  return <section className="main-container-blk">Dashboard</section>;
 };
 
 export default WeatherPage;

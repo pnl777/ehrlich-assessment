@@ -12,32 +12,93 @@ button {
   background: #561cbe;
   display: flex;
   align-items: center;
-  padding: 15px 40px;
+  padding: 20px 40px;
 }
 .navigation-blk div:last-child {
   margin-left: auto;
 }
+.navigation-blk .brand-blk {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+.navigation-blk .brand-blk .fa-sun {
+  color: yellow;
+  margin-right: 5px;
+}
 .navigation-blk .logout-btn-blk {
-  background: #3b2cb1;
-  border: none;
+  background: #561cbe;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #655aab;
+  color: #fff;
   font-size: 10px;
-  padding: 10px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.main-container-blk {
+  padding: 20px 40px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 40px;
+}
+.dashboard label {
+  margin-top: 5px;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+}
+.dashboard label b {
+  color: #561cbe;
+  margin-right: 5px;
+}
+.dashboard div:first-child {
+  flex: 1;
+}
+.dashboard div:last-child {
+  flex: 3;
+}
+.dashboard img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-container-blk {
+  width: 998px;
+  margin: 40px auto;
+}
+.login-container-blk h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 }
 
 .spinner-blk {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #9714ef;
-  border-top: 3px solid #4c0075;
   border-radius: 50%;
   animation: spinAnimation 1s linear infinite;
+}
+
+.small-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #561cbe;
+  border-top: 3px solid rgb(122, 66, 253);
 }
 
 .large-spinner {
   width: 100px;
   height: 100px;
-  border: 15px solid #9714ef;
-  border-top: 15px solid #4c0075;
+  border: 15px solid #561cbe;
+  border-top: 15px solid rgb(122, 66, 253);
+}
+
+.medium-spinner {
+  width: 70px;
+  height: 70px;
+  border: 10px solid #561cbe;
+  border-top: 10px solid rgb(122, 66, 253);
 }
 
 .center-spinner {

@@ -4,13 +4,15 @@ import Spinner from "./Spinner";
 const LoginButton = () => {
   const {loginWithRedirect, isAuthenticated, isLoading} = useAuth0();
 
-  if (isLoading) return <Spinner />;
+  const loginHandler = async () => {
+    await loginWithRedirect();
+  };
 
-  //   return !isAuthenticated ? (
-  //     <button onClick={() => loginWithRedirect()}>LOGIN</button>
-  //   ) : null;
+  if (isLoading) return <Spinner variant="small-spinner" />;
 
-  return <Spinner />;
+  return !isAuthenticated ? (
+    <button onClick={loginHandler}>LOGIN</button>
+  ) : null;
 };
 
 export default LoginButton;
