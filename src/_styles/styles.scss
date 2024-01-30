@@ -1,5 +1,59 @@
+$mainColor: #561cbe;
+$mainPadding: 15px 40px;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+
+.navigation-blk {
+  background: $mainColor;
+  display: flex;
+  align-items: center;
+  padding: $mainPadding;
+  div:last-child {
+    margin-left: auto;
+  }
+
+  .logout-btn-blk {
+    background: #3b2cb1;
+    border: none;
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+//Spinner Styles
+.spinner-blk {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #9714ef;
+  border-top: 3px solid #4c0075;
+  border-radius: 50%;
+  animation: spinAnimation 1s linear infinite;
+}
+
+.large-spinner {
+  width: 100px;
+  height: 100px;
+  border: 15px solid #9714ef;
+  border-top: 15px solid #4c0075;
+}
+
+.center-spinner {
+  margin: 10px auto;
+  display: block;
+}
+
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
