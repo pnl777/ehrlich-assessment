@@ -1,4 +1,5 @@
 import {useAuth0} from "@auth0/auth0-react";
+import InputCity from "../components/InputCity";
 
 const DashboardPage = () => {
   const {user} = useAuth0();
@@ -15,7 +16,10 @@ const DashboardPage = () => {
           https://github.com/{user?.nickname}
         </label>
       </div>
-      <div>2</div>
+      <div>
+        <h2>Search for a city to discover its current weather conditions. </h2>
+        <InputCity />
+      </div>
     </section>
   );
 };
