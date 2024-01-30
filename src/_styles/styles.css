@@ -232,6 +232,45 @@ input:focus {
     transform: rotate(360deg);
   }
 }
+.not-found-blk {
+  width: 645px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.not-found-blk h1 {
+  font-size: 200px;
+  color: #561cbe;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  line-height: 200px;
+}
+.not-found-blk h2 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #333333;
+}
+.not-found-blk p {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #212121;
+}
+.not-found-blk a {
+  margin-top: 30px;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background: #561cbe;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
 @media (max-width: 598px) {
   .navigation-blk .brand-blk i {
     font-size: 25px;

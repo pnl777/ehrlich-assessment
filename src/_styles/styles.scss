@@ -238,6 +238,46 @@ input:focus {
   }
 }
 
+// Not Found Style
+.not-found-blk {
+  width: 645px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  h1 {
+    font-size: 200px;
+    color: $mainColor;
+    font-family: $interFont;
+    text-align: center;
+    line-height: 200px;
+  }
+  h2 {
+    font-family: $openSansFont;
+    text-align: center;
+    color: #333333;
+  }
+  p {
+    display: block;
+    font-family: $openSansFont;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #212121;
+  }
+  a {
+    margin-top: 30px;
+    display: inline-block;
+    font-family: $openSansFont;
+    font-size: 12px;
+    color: #fff;
+    background: $mainColor;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+}
+
 // Media Queries
 @media (max-width: 598px) {
   .navigation-blk {
