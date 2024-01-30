@@ -160,12 +160,37 @@ input:focus {
 }
 
 .login-container-blk {
-  width: 998px;
-  margin: 40px auto;
+  background: rgb(247, 247, 247);
+  width: 600px;
+  padding: 50px;
+  margin: 50px auto;
 }
 .login-container-blk h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 40px;
+  font-size: 30px;
+  color: #561cbe;
+  display: block;
+  margin-bottom: 0px;
+}
+.login-container-blk p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #353535;
+  display: block;
+  margin-bottom: 20px;
+}
+.login-container-blk .login-btn-blk {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  color: #fff;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  padding: 10px;
+  background: #561cbe;
 }
 
 .spinner-blk {

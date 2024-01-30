@@ -11,7 +11,9 @@ const LoginButton = () => {
   if (isLoading) return <Spinner variant="small-spinner" />;
 
   return !isAuthenticated ? (
-    <button onClick={loginHandler}>LOGIN</button>
+    <button className="login-btn-blk" onClick={loginHandler}>
+      LOGIN
+    </button>
   ) : null;
 };
 

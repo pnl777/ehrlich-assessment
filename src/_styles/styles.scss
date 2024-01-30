@@ -164,11 +164,36 @@ input:focus {
 
 // Login Container Styles
 .login-container-blk {
-  width: 998px;
-  margin: 40px auto;
+  background: rgb(247, 247, 247);
+  width: 600px;
+  padding: 50px;
+  margin: 50px auto;
   h1 {
     font-family: $openSansFont;
-    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    font-size: 30px;
+    color: $mainColor;
+    display: block;
+    margin-bottom: 0px;
+  }
+  p {
+    font-family: $openSansFont;
+    font-size: 15px;
+    color: #353535;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .login-btn-blk {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    color: #fff;
+    border: none;
+    font-family: $openSansFont;
+    letter-spacing: 1px;
+    padding: 10px;
+    background: $mainColor;
   }
 }
 

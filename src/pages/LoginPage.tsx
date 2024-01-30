@@ -19,10 +19,11 @@ const LoginPage = () => {
 
   return (
     <div className="login-container-blk">
-      <h1>
-        Welcome to weather forecast web application. Please login with your
-        Github user to use the application and view the weather in your city
-      </h1>
+      <h1> Welcome to The Weather Forecast</h1>
+      <p>
+        Please login with your Github user to use the application and view the
+        weather in your city
+      </p>
       <LoginButton />
     </div>
   );
