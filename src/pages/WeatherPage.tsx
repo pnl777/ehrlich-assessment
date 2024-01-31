@@ -41,7 +41,7 @@ const WeatherPage = () => {
           <p>{dateFormatter()}</p>
         </div>
         <div>
-          <h2>Temp</h2>
+          <h2>Temp(F)</h2>
           <p>{data?.main?.temp}</p>
         </div>
         <div>

@@ -49,6 +49,7 @@ const InputCity = () => {
           name="city"
           onChange={onChangeHandler}
           placeholder="Search City...."
+          autoComplete="off"
         />
         <button type="submit">
           <i className="fa-solid fa-magnifying-glass"></i>
